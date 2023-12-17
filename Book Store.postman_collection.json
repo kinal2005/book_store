@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "37e31e08-cb50-4c6b-84b8-388b2facd05c",
+		"name": "Book Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{base_url}}/books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/books/124",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"books",
+						"124"
+					]
+				},
+				"description": "insert book data"
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Admin@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "King was silent.",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Lillie Koch",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "The chief difficulty Alice found at first was moderate. But the snail replied \"Too far, too far.",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/E:/Wallpaper/417401.jpg"
+						},
+						{
+							"key": "published",
+							"value": "2023-12-30",
+							"description": "Y-m-d format",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "Quis Enim",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/books",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"books"
+					]
+				},
+				"description": "Insert Book Data"
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/get-book-details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "bookId",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/get-book-details",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-book-details"
+					]
+				},
+				"description": "Fetch book details"
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/get-book-details Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search_value",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/get-title",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-title"
+					]
+				},
+				"description": "Fetch book details"
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/books/{bookId}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "kkiminin 32",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Lillie Koch",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "The chief difficulty Alice found at first was moderate. But the snail replied \"Too far, too far.",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/E:/Wallpaper/417401.jpg"
+						},
+						{
+							"key": "published",
+							"value": "2023-12-30",
+							"description": "Y-m-d format",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "Quis Enim",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/books/125",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"books",
+						"125"
+					]
+				},
+				"description": "Update book data"
+			},
+			"response": []
+		}
+	]
+}
