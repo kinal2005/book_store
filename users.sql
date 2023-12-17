@@ -1,0 +1,2 @@
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'admin@test.com', NULL, '$2y$10$DabZ3C/pGa1JmrTq2xFPvuoeoAW/UyxJ3M6BKIR5WagFdnT.DpTWa', NULL, '2023-12-17 11:33:57', '2023-12-17 11:33:57');
